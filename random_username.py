@@ -69,7 +69,7 @@ def main():
 
     # Display generated usernames
     print(colorful_text("\nHere are your generated usernames:", "94"))  # Blue text
-    for username in usernames:
+    for username in set(usernames):
         print(colorful_text(username, "95"))  # Purple text
 
     # Save usernames to file
